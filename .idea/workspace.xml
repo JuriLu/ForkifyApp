@@ -4,18 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8f0556ba-caaa-45a3-a135-6da03f3a6203" name="Changes" comment="git ignore updated">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="8f0556ba-caaa-45a3-a135-6da03f3a6203" name="Changes" comment="git ignore updated&#10;fetching data from server">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.parcel-cache/6054c31dbe703fb9-BundleGraph-0" beforeDir="false" afterPath="$PROJECT_DIR$/.parcel-cache/6054c31dbe703fb9-BundleGraph-0" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.parcel-cache/7f973df67467291d-AssetGraph-0" beforeDir="false" afterPath="$PROJECT_DIR$/.parcel-cache/7f973df67467291d-AssetGraph-0" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.parcel-cache/a8a28560cabca33b-AssetGraph-0" beforeDir="false" afterPath="$PROJECT_DIR$/.parcel-cache/a8a28560cabca33b-AssetGraph-0" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.parcel-cache/data.mdb" beforeDir="false" afterPath="$PROJECT_DIR$/.parcel-cache/data.mdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.parcel-cache/requestGraph-8b272c8491111040-0" beforeDir="false" afterPath="$PROJECT_DIR$/.parcel-cache/requestGraph-8b272c8491111040-0" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.parcel-cache/requestGraph-nodes-0-8b272c8491111040-0" beforeDir="false" afterPath="$PROJECT_DIR$/.parcel-cache/requestGraph-nodes-0-8b272c8491111040-0" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.parcel-cache/snapshot-8b272c8491111040.txt" beforeDir="false" afterPath="$PROJECT_DIR$/.parcel-cache/snapshot-8b272c8491111040.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/js/controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/controller.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -85,7 +79,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1729173860034</updated>
-      <workItem from="1729173862281" duration="2737000" />
+      <workItem from="1729173862281" duration="3753000" />
     </task>
     <task id="LOCAL-00001" summary="delete all">
       <option name="closed" value="true" />
@@ -111,7 +105,15 @@
       <option name="project" value="LOCAL" />
       <updated>1729177329135</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="git ignore updated&#10;fetching data from server">
+      <option name="closed" value="true" />
+      <created>1729177453159</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1729177453159</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -121,6 +123,7 @@
     <MESSAGE value="delete all" />
     <MESSAGE value="Re-init project" />
     <MESSAGE value="git ignore updated" />
-    <option name="LAST_COMMIT_MESSAGE" value="git ignore updated" />
+    <MESSAGE value="git ignore updated&#10;fetching data from server" />
+    <option name="LAST_COMMIT_MESSAGE" value="git ignore updated&#10;fetching data from server" />
   </component>
 </project>
