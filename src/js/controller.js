@@ -1,4 +1,6 @@
 import icons from 'url:../img/icons.svg'
+import 'core-js/stable'                 //* Polyfilling anything else
+import 'regenerator-runtime/runtime'    //* Polyfilling async/await
 
 console.log(icons);
 const recipeContainer = document.querySelector('.recipe');
@@ -17,7 +19,19 @@ const api_key = '6a1f9a3d-b072-4351-8b88-a629f043cd36'  //* Needs refreshing eve
 let id = '664c8f193e7aa067e94e89c9'
 const url = `https://forkify-api.herokuapp.com/api/v2/recipes/${id}`
 
-const renderingRecipeDetails = function(recipe){
+const renderSpinner = function (parentEl) {
+    const markup = `
+       <div class="spinner">
+         <svg>
+            <use href="${icons}#icon-loader"></use>
+         </svg>
+       </div> 
+       `;
+    parentEl.innerHTML = ''
+    parentEl.insertAdjacentHTML('afterbegin', markup)
+}
+
+const renderingRecipeDetails = function (recipe) {
     const markup = `
                      <figure class="recipe__fig">
                       <img src="${recipe.image}" alt="${recipe.title}" class="recipe__img" />
@@ -110,6 +124,7 @@ const renderingRecipeDetails = function(recipe){
 
 const showRecipe = async function () {
     try {
+        renderSpinner(recipeContainer);
         const res = await fetch(url);
         const data = await res.json()
 
