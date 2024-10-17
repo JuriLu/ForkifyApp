@@ -15,9 +15,9 @@ const timeout = function (s) {
 // https://forkify-api.herokuapp.com/v2
 
 ///////////////////////////////////////
-const api_key = '6a1f9a3d-b072-4351-8b88-a629f043cd36'  //* Needs refreshing every 1 hour
 let id = '664c8f193e7aa067e94e89c9'
-const url = `https://forkify-api.herokuapp.com/api/v2/recipes/${id}`
+const api_key = '6a1f9a3d-b072-4351-8b88-a629f043cd36'  //* Needs refreshing every 1 hour
+const url = (id) => `https://forkify-api.herokuapp.com/api/v2/recipes/${id}`
 
 const renderSpinner = function (parentEl) {
     const markup = `
@@ -124,8 +124,13 @@ const renderingRecipeDetails = function (recipe) {
 
 const showRecipe = async function () {
     try {
+        id = window.location.hash.slice(1)
+        console.log(id)
+
+        if (!id) return; //* guard close for id
+
         renderSpinner(recipeContainer);
-        const res = await fetch(url);
+        const res = await fetch(url(id));
         const data = await res.json()
 
         if (!res.ok) throw new Error(`${data.message} (${res.status})`)
@@ -147,6 +152,6 @@ const showRecipe = async function () {
     } catch (e) {
         alert(e)
     }
-}
+};
 
-showRecipe()
+['hashchange','load'].forEach(ev => window.addEventListener(ev,showRecipe))
