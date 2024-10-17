@@ -4,13 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8f0556ba-caaa-45a3-a135-6da03f3a6203" name="Changes" comment="delete all">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/forkifyApp.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/git_toolbox_blame.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/git_toolbox_prj.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="8f0556ba-caaa-45a3-a135-6da03f3a6203" name="Changes" comment="git ignore updated">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.parcel-cache/6054c31dbe703fb9-BundleGraph-0" beforeDir="false" afterPath="$PROJECT_DIR$/.parcel-cache/6054c31dbe703fb9-BundleGraph-0" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.parcel-cache/7f973df67467291d-AssetGraph-0" beforeDir="false" afterPath="$PROJECT_DIR$/.parcel-cache/7f973df67467291d-AssetGraph-0" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.parcel-cache/a8a28560cabca33b-AssetGraph-0" beforeDir="false" afterPath="$PROJECT_DIR$/.parcel-cache/a8a28560cabca33b-AssetGraph-0" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.parcel-cache/data.mdb" beforeDir="false" afterPath="$PROJECT_DIR$/.parcel-cache/data.mdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.parcel-cache/requestGraph-8b272c8491111040-0" beforeDir="false" afterPath="$PROJECT_DIR$/.parcel-cache/requestGraph-8b272c8491111040-0" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.parcel-cache/requestGraph-nodes-0-8b272c8491111040-0" beforeDir="false" afterPath="$PROJECT_DIR$/.parcel-cache/requestGraph-nodes-0-8b272c8491111040-0" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.parcel-cache/snapshot-8b272c8491111040.txt" beforeDir="false" afterPath="$PROJECT_DIR$/.parcel-cache/snapshot-8b272c8491111040.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/controller.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,9 +49,27 @@
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_interpreter_path": "C:/Users/j.lubonja/AppData/Roaming/JetBrains/WebStorm2024.2/node/versions/20.15.0/node",
     "nodejs_package_manager_path": "npm",
+    "npm.start.executor": "Run",
     "settings.editor.selected.configurable": "settings.nodejs"
   }
 }]]></component>
+  <component name="RunManager">
+    <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.start" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -61,7 +85,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1729173860034</updated>
-      <workItem from="1729173862281" duration="580000" />
+      <workItem from="1729173862281" duration="2737000" />
     </task>
     <task id="LOCAL-00001" summary="delete all">
       <option name="closed" value="true" />
@@ -71,7 +95,23 @@
       <option name="project" value="LOCAL" />
       <updated>1729173878663</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Re-init project">
+      <option name="closed" value="true" />
+      <created>1729174496758</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1729174496758</updated>
+    </task>
+    <task id="LOCAL-00003" summary="git ignore updated">
+      <option name="closed" value="true" />
+      <created>1729177329135</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1729177329135</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -79,6 +119,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="delete all" />
-    <option name="LAST_COMMIT_MESSAGE" value="delete all" />
+    <MESSAGE value="Re-init project" />
+    <MESSAGE value="git ignore updated" />
+    <option name="LAST_COMMIT_MESSAGE" value="git ignore updated" />
   </component>
 </project>
