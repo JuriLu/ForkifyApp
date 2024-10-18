@@ -1,6 +1,8 @@
 export const state = {
     recipe: {}
 }
+const api_key = '6a1f9a3d-b072-4351-8b88-a629f043cd36'  //* Needs refreshing every 1 hour
+const url = (id) => `https://forkify-api.herokuapp.com/api/v2/recipes/${id}`
 
 export const loadRecipe = async function(id){
     try{
