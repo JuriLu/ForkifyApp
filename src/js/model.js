@@ -1,5 +1,6 @@
 import {API_URL} from "./config";
 import {getJSON} from "./views/helper";
+import recipeView from "./views/recipeView";
 
 export const state = {
     recipe: {}
@@ -23,5 +24,6 @@ export const loadRecipe = async function(id){
         console.log('State recipe from the model: ', state.recipe)
     } catch (err) {
         console.error(`${err} 💥💥💥`)
+        throw err
     }
 }
