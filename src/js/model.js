@@ -1,20 +1,15 @@
+import {API_URL} from "./config";
+import {getJSON} from "./views/helper";
+
 export const state = {
     recipe: {}
 }
-const api_key = '6a1f9a3d-b072-4351-8b88-a629f043cd36'  //* Needs refreshing every 1 hour
-const url = (id) => `https://forkify-api.herokuapp.com/api/v2/recipes/${id}`
 
 export const loadRecipe = async function(id){
     try{
-        const api_key = '6a1f9a3d-b072-4351-8b88-a629f043cd36'  //* Needs refreshing every 1 hour
-        const url = (id) => `https://forkify-api.herokuapp.com/api/v2/recipes/${id}`
-        console.log('from model',id)
-        const res = await fetch(`https://forkify-api.herokuapp.com/api/v2/recipes/${id}`);
-        const data = await res.json()
+        const data = await getJSON(`${API_URL}/${id}`)
 
-        if (!res.ok) throw new Error(`${data.message} (${res.status})`)
         const {recipe} = data.data;
-
         state.recipe = {
             id: recipe.id,
             title: recipe.title,
@@ -26,7 +21,7 @@ export const loadRecipe = async function(id){
             ingredients: recipe.ingredients
         }
         console.log('State recipe from the model: ', state.recipe)
-    } catch (e) {
-        alert(e)
+    } catch (err) {
+        console.error(`${err} 💥💥💥`)
     }
 }

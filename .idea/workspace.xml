@@ -4,13 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8f0556ba-caaa-45a3-a135-6da03f3a6203" name="Changes" comment="MVC Architecture&#10;- Updating model">
+    <list default="true" id="8f0556ba-caaa-45a3-a135-6da03f3a6203" name="Changes" comment="MVC Architecture&#10;- Configuration module">
+      <change afterPath="$PROJECT_DIR$/src/js/config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/js/views/helper.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/js/controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/controller.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/js/model.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/model.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/views/recipeView.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/views/recipeView.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,7 +90,7 @@
       <updated>1729173860034</updated>
       <workItem from="1729173862281" duration="5494000" />
       <workItem from="1729244031744" duration="4000" />
-      <workItem from="1729255775334" duration="4968000" />
+      <workItem from="1729255775334" duration="7194000" />
     </task>
     <task id="LOCAL-00001" summary="delete all">
       <option name="closed" value="true" />
@@ -165,7 +164,15 @@
       <option name="project" value="LOCAL" />
       <updated>1729258588430</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="MVC Architecture&#10;- Updating View (Class)&#10;- Add frational dependency">
+      <option name="closed" value="true" />
+      <created>1729261143800</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1729261143800</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -181,6 +188,7 @@
     <MESSAGE value="Render recipes on id change (path)" />
     <MESSAGE value="MVC Architecture" />
     <MESSAGE value="MVC Architecture&#10;- Updating model" />
-    <option name="LAST_COMMIT_MESSAGE" value="MVC Architecture&#10;- Updating model" />
+    <MESSAGE value="MVC Architecture&#10;- Updating View (Class)&#10;- Add frational dependency" />
+    <option name="LAST_COMMIT_MESSAGE" value="MVC Architecture&#10;- Updating View (Class)&#10;- Add frational dependency" />
   </component>
 </project>
