@@ -4,12 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8f0556ba-caaa-45a3-a135-6da03f3a6203" name="Changes" comment="MVC Architecture&#10;- Configuration module&#10;- Helper and config&#10;(WIP)">
-      <change afterPath="$PROJECT_DIR$/src/js/views/searchView.js" afterDir="false" />
+    <list default="true" id="8f0556ba-caaa-45a3-a135-6da03f3a6203" name="Changes" comment="MVC Architecture&#10;- Search result controller&#10;- Search result view&#10;(WIP)">
+      <change afterPath="$PROJECT_DIR$/src/js/views/View.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/js/views/resultsView.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/config.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/js/controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/controller.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/model.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/model.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/views/recipeView.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/views/recipeView.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/views/searchView.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/views/searchView.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,8 +26,14 @@
       </list>
     </option>
   </component>
+  <component name="FormatOnSaveOptions">
+    <option name="myRunOnSave" value="true" />
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="OptimizeOnSaveOptions">
+    <option name="myRunOnSave" value="true" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
@@ -53,7 +62,7 @@
     "nodejs_interpreter_path": "C:/Users/j.lubonja/AppData/Roaming/JetBrains/WebStorm2024.2/node/versions/20.15.0/node",
     "nodejs_package_manager_path": "npm",
     "npm.start.executor": "Run",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+    "settings.editor.selected.configurable": "actions.on.save"
   }
 }]]></component>
   <component name="RunManager">
@@ -97,7 +106,7 @@
       <workItem from="1729592054215" duration="319000" />
       <workItem from="1729592390953" duration="54000" />
       <workItem from="1729592454245" duration="1927000" />
-      <workItem from="1729600915936" duration="1873000" />
+      <workItem from="1729600915936" duration="4288000" />
     </task>
     <task id="LOCAL-00001" summary="delete all">
       <option name="closed" value="true" />
@@ -195,7 +204,15 @@
       <option name="project" value="LOCAL" />
       <updated>1729347218059</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="MVC Architecture&#10;- Search result controller&#10;- Search result view&#10;(WIP)">
+      <option name="closed" value="true" />
+      <created>1729602871134</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1729602871134</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -214,6 +231,7 @@
     <MESSAGE value="MVC Architecture&#10;- Updating View (Class)&#10;- Add frational dependency" />
     <MESSAGE value="MVC Architecture&#10;- finishing configuration and helper" />
     <MESSAGE value="MVC Architecture&#10;- Publisher-Subscribe pattern" />
-    <option name="LAST_COMMIT_MESSAGE" value="MVC Architecture&#10;- Publisher-Subscribe pattern" />
+    <MESSAGE value="MVC Architecture&#10;- Search result controller&#10;- Search result view&#10;(WIP)" />
+    <option name="LAST_COMMIT_MESSAGE" value="MVC Architecture&#10;- Search result controller&#10;- Search result view&#10;(WIP)" />
   </component>
 </project>
