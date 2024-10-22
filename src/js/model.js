@@ -1,12 +1,13 @@
-import {API_URL} from "./config";
-import {getJSON} from "./views/helper";
-import recipeView from "./views/recipeView";
+import {API_URL, RES_PER_PAGE} from "./config";
+import {getJSON} from "./helper";
 
 export const state = {
     recipe: {},
     search: {
         query: '',
-        results: []
+        results: [],
+        page: 1,
+        resultsPerPage: RES_PER_PAGE
     }
 }
 
@@ -25,7 +26,6 @@ export const loadRecipe = async function (id) {
             cookingTime: recipe.cooking_time,
             ingredients: recipe.ingredients
         }
-        console.log('State recipe from the model: ', state.recipe)
     } catch (err) {
         console.error(`${err} 💥💥💥`)
         throw err
@@ -37,7 +37,7 @@ export const loadSearchResults = async function (query) {
         state.search.query = query
         const data = await getJSON(`${API_URL}?search=${query}`)
 
-       state.search.results = data.data.recipes.map(rec => {
+        state.search.results = data.data.recipes.map(rec => {
             return {
                 id: rec.id,
                 title: rec.title,
@@ -49,6 +49,15 @@ export const loadSearchResults = async function (query) {
         console.error(`${err} 💥💥💥`)
         throw err
     }
+}
+
+export const getSearchResultsPage = function (page = state.search.page) {
+    state.search.page = page;
+
+    const start = (page - 1) * state.search.resultsPerPage;
+    const end = page * state.search.resultsPerPage
+
+    return state.search.results.slice(start, end)
 }
 
 
