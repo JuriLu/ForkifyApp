@@ -1,10 +1,10 @@
-import 'core-js/stable' //* Polyfilling anything else
-import 'regenerator-runtime/runtime' //* Polyfilling async/await
+import 'core-js/stable'; //* Polyfilling anything else
+import 'regenerator-runtime/runtime'; //* Polyfilling async/await
 import * as model from "./model";
-import recipeView from "./views/recipeView.js";
-import searchView from "./views/searchView";
-import resultsView from "./views/resultsView";
 import paginationView from "./views/paginationView";
+import recipeView from "./views/recipeView.js";
+import resultsView from "./views/resultsView";
+import searchView from "./views/searchView";
 
 // https://forkify-api.herokuapp.com/v2
 
@@ -73,11 +73,22 @@ const controlServings = function (newServings) {
     recipeView.update(model.state.recipe);
 }
 
+const controlAddBookmark = function () {
+    if(!model.state.recipe.bookmarked){
+        model.addBookmark(model.state.recipe)
+    } else {
+        model.deleteBookmark(model.state.recipe.id)
+    }
+    
+    recipeView.update(model.state.recipe)
+}
+
 const init = function () {
-    recipeView.addHandleRender(controlRecipes)
-    recipeView.addHandlerUpdateServings(controlServings)
-    searchView.addHandlerSearch(controlSearchResults)
-    paginationView.addHandlerClick(controlPagination)
+    recipeView.addHandleRender(controlRecipes);
+    recipeView.addHandlerUpdateServings(controlServings);
+    recipeView.addHandlerAddBookmark(controlAddBookmark);
+    searchView.addHandlerSearch(controlSearchResults);
+    paginationView.addHandlerClick(controlPagination);
 }
 
 init()
