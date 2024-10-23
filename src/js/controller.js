@@ -1,6 +1,7 @@
 import 'core-js/stable'; //* Polyfilling anything else
 import 'regenerator-runtime/runtime'; //* Polyfilling async/await
 import * as model from "./model";
+import addRecipeView from './views/addRecipeView.js';
 import bookmarksView from './views/bookmarksView.js';
 import paginationView from "./views/paginationView";
 import recipeView from "./views/recipeView.js";
@@ -97,6 +98,11 @@ const controlBookmarks = function(){
     bookmarksView.render(model.state.bookmarks)
 }
 
+const controlAddRecipe = function(newRecipe){
+    console.log('FORM DATA: ',newRecipe)
+
+}
+
 const init = function () {
     bookmarksView.addHandlerRender(controlBookmarks)
     recipeView.addHandleRender(controlRecipes);
@@ -104,6 +110,9 @@ const init = function () {
     recipeView.addHandlerAddBookmark(controlAddBookmark);
     searchView.addHandlerSearch(controlSearchResults);
     paginationView.addHandlerClick(controlPagination);
+    addRecipeView.addHandlerUpload(controlAddRecipe)
 }
+
+const recipeView = addRecipeView  //* trick VSCODE on not removing unused import for addRecipeView
 
 init()
