@@ -104,26 +104,32 @@ const controlAddRecipe = async function(newRecipe){
         //* 1) Show loading spinner
         addRecipeView.renderSpinner()
 
-        //* 1) Upload the new recipe data
+        //* 2) Upload the new recipe data
        await model.uploadRecipe(newRecipe);
-       console.log(model.state.recipe)
 
-       //* 2) Render recipe
+       //* 3) Render recipe
        recipeView.render(model.state.recipe);
 
-       //* 3) Success message
+       //* 4) Success message
         addRecipeView.renderMessage();
 
-       //* 4) Close Form window
+       //* 5) Close Form window
        setTimeout(()=>{
         addRecipeView.toggleWindow()
        },MODAL_CLOSE_SEC * 1000)
+
+       //* 6) Render bookmark view
+       bookmarksView.render(model.state.bookmarks);
+
+       //* 7) Change ID in URL
+       window.history.pushState(null,'',`#${model.state.recipe.id}`)
+
+
+
     } catch(err) {
         console.error(err);
         addRecipeView.renderError(err.message);
     }
-
-    console.log('FORM DATA: ',newRecipe)
     model.uploadRecipe(newRecipe)
 }
 
