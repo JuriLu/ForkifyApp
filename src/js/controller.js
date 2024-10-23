@@ -1,5 +1,6 @@
 import 'core-js/stable'; //* Polyfilling anything else
 import 'regenerator-runtime/runtime'; //* Polyfilling async/await
+import { MODAL_CLOSE_SEC } from './config';
 import * as model from "./model";
 import addRecipeView from './views/addRecipeView.js';
 import bookmarksView from './views/bookmarksView.js';
@@ -98,9 +99,32 @@ const controlBookmarks = function(){
     bookmarksView.render(model.state.bookmarks)
 }
 
-const controlAddRecipe = function(newRecipe){
-    console.log('FORM DATA: ',newRecipe)
+const controlAddRecipe = async function(newRecipe){
+    try{
+        //* 1) Show loading spinner
+        addRecipeView.renderSpinner()
 
+        //* 1) Upload the new recipe data
+       await model.uploadRecipe(newRecipe);
+       console.log(model.state.recipe)
+
+       //* 2) Render recipe
+       recipeView.render(model.state.recipe);
+
+       //* 3) Success message
+        addRecipeView.renderMessage();
+
+       //* 4) Close Form window
+       setTimeout(()=>{
+        addRecipeView.toggleWindow()
+       },MODAL_CLOSE_SEC * 1000)
+    } catch(err) {
+        console.error(err);
+        addRecipeView.renderError(err.message);
+    }
+
+    console.log('FORM DATA: ',newRecipe)
+    model.uploadRecipe(newRecipe)
 }
 
 const init = function () {
