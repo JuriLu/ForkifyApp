@@ -133,6 +133,10 @@ const controlAddRecipe = async function (newRecipe) {
     model.uploadRecipe(newRecipe)
 }
 
+const newFeature = function () {
+    console.log('Welcome to forkify!')
+}
+
 const init = function () {
     bookmarksView.addHandlerRender(controlBookmarks)
     recipeView.addHandleRender(controlRecipes);
