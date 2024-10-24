@@ -82,7 +82,7 @@ const controlServings = function (newServings) {
 const controlAddBookmark = function () {
 
     //* 1) Add/remove bookmark
-    if(!model.state.recipe.bookmarked){
+    if (!model.state.recipe.bookmarked) {
         model.addBookmark(model.state.recipe)
     } else {
         model.deleteBookmark(model.state.recipe.id)
@@ -95,38 +95,38 @@ const controlAddBookmark = function () {
     bookmarksView.render(model.state.bookmarks)
 }
 
-const controlBookmarks = function(){
+const controlBookmarks = function () {
     bookmarksView.render(model.state.bookmarks)
 }
 
-const controlAddRecipe = async function(newRecipe){
-    try{
+const controlAddRecipe = async function (newRecipe) {
+    try {
         //* 1) Show loading spinner
         addRecipeView.renderSpinner()
 
         //* 2) Upload the new recipe data
-       await model.uploadRecipe(newRecipe);
+        await model.uploadRecipe(newRecipe);
 
-       //* 3) Render recipe
-       recipeView.render(model.state.recipe);
+        //* 3) Render recipe
+        recipeView.render(model.state.recipe);
 
-       //* 4) Success message
+        //* 4) Success message
         addRecipeView.renderMessage();
 
-       //* 5) Close Form window
-       setTimeout(()=>{
-        addRecipeView.toggleWindow()
-       },MODAL_CLOSE_SEC * 1000)
+        //* 5) Close Form window
+        setTimeout(() => {
+            addRecipeView.toggleWindow()
+        }, MODAL_CLOSE_SEC * 1000)
 
-       //* 6) Render bookmark view
-       bookmarksView.render(model.state.bookmarks);
+        //* 6) Render bookmark view
+        bookmarksView.render(model.state.bookmarks);
 
-       //* 7) Change ID in URL
-       window.history.pushState(null,'',`#${model.state.recipe.id}`)
+        //* 7) Change ID in URL
+        window.history.pushState(null, '', `#${model.state.recipe.id}`)
 
 
 
-    } catch(err) {
+    } catch (err) {
         console.error(err);
         addRecipeView.renderError(err.message);
     }
@@ -142,7 +142,5 @@ const init = function () {
     paginationView.addHandlerClick(controlPagination);
     addRecipeView.addHandlerUpload(controlAddRecipe)
 }
-
-const recipeView = addRecipeView  //* trick VSCODE on not removing unused import for addRecipeView
 
 init()
